@@ -128,7 +128,7 @@ Edit the plists first to point to your install path.
 
 ## Deferred / things you'll hit
 
-- **Audio-only feeds.** A `get_transcripts_whisper.py` path would unlock podcasts that live on RSS but not YouTube. Not included because Whisper is its own setup story. PRs welcome.
+- **Audio-only feeds.** A `get_transcripts_whisper.py` path would unlock podcasts that live on RSS but not YouTube. Not included because Whisper is its own setup story. 
 - **Channel handle drift.** YouTube handles occasionally change. Re-run `resolve_channel_ids.sh` if a feed goes cold.
 - **Rate limits.** Flash paid tier is fine; free tier will throttle. Enable billing on your GCP project.
 - **Synthesis quality varies with episode volume.** 3-episode weeks feel thin; 15-episode weeks may need a tighter prompt. Tune the `compile_digest.py` prompt to your taste.
