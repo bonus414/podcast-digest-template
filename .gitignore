@@ -6,7 +6,8 @@ state.json
 new_episodes.json
 ready_for_extract.json
 .env
-.env.*
+.env.local
+.env.production
 retry_*.json
 __pycache__/
 *.pyc
