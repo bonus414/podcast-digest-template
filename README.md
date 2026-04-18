@@ -6,12 +6,6 @@ Pulls YouTube auto-subtitles from a list of podcast channels, extracts structure
 
 Runs on macOS via `launchd` (cron also works). Costs pennies per week at Flash pricing.
 
-## Why this exists
-
-The marginal cost of a bespoke pipeline has collapsed. A tool this specific, tuned exactly to one reader's taste, used to be a weekend project. Now it's an afternoon. The template is here so you can fork it, swap your own feeds, and spend your afternoon differently.
-
-Originally built by a product leader who wanted trend-scanning across AI/product podcasts without 36 listening hours a week. See [BAKEOFF-RESULTS.md](./BAKEOFF-RESULTS.md) for the model-selection story — a useful case study in picking the boring production-tuned model over the shiny new one.
-
 ## What it does
 
 ```
