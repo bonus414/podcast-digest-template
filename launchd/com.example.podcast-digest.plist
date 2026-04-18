@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Weekly digest job. Edit REPLACE_ME_USERNAME and the install path before use.
+  Sunday = Weekday 0 in launchd.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.podcast-digest</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/REPLACE_ME_USERNAME/podcast-digest-template/launchd/wrapper_digest.sh</string>
+    </array>
+
+    <!-- Sunday at 14:00 local time -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>14</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/REPLACE_ME_USERNAME/podcast-digest-template</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/REPLACE_ME_USERNAME/podcast-digest-template/launchd-digest.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/REPLACE_ME_USERNAME/podcast-digest-template/launchd-digest.err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

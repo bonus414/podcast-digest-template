@@ -1,0 +1,49 @@
+{
+  "_comment": "Copy to feeds.json and replace with your own feeds. Use scripts/resolve_channel_ids.sh to turn @handles into channel IDs. Set enabled:false to skip without deleting.",
+  "feeds": [
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "source_type": "channel",
+      "channel_id": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+      "enabled": true,
+      "last_seen_video_id": null
+    },
+    {
+      "id": "no-priors",
+      "name": "No Priors",
+      "source_type": "channel",
+      "channel_id": "UCSI7h9hydQ40K5MJHnCrQvw",
+      "enabled": true,
+      "last_seen_video_id": null
+    },
+    {
+      "id": "ai-daily-brief",
+      "name": "AI Daily Brief",
+      "source_type": "channel",
+      "channel_id": "UCKelCK4ZaO6HeEI1KQjqzWA",
+      "enabled": true,
+      "last_seen_video_id": null,
+      "_comment_filter": "Weekday-only example — remove if you want all days",
+      "publish_day_filter": ["Mon", "Tue", "Wed", "Thu", "Fri"]
+    },
+    {
+      "id": "example-keyword-gated",
+      "name": "Example: Keyword-Gated Broad Feed",
+      "source_type": "channel",
+      "channel_id": "UCxxxxxxxxxxxxxxxxxxxx",
+      "enabled": false,
+      "last_seen_video_id": null,
+      "_comment_gate": "Example of filtering a broad channel down to AI-relevant episodes",
+      "keyword_gate": ["ai", "llm", "agent", "ollama", "mlx", "claude", "gpt", "gemini"]
+    },
+    {
+      "id": "example-playlist",
+      "name": "Example: Playlist Source",
+      "source_type": "playlist",
+      "playlist_id": "PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "enabled": false,
+      "last_seen_video_id": null
+    }
+  ]
+}

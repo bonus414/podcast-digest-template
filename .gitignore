@@ -1,0 +1,16 @@
+transcripts/
+extracts/
+digests/
+*.log
+state.json
+new_episodes.json
+ready_for_extract.json
+.env
+.env.*
+retry_*.json
+__pycache__/
+*.pyc
+.DS_Store
+
+# Don't commit a user's actual feed list
+feeds.json
